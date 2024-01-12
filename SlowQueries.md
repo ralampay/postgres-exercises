@@ -10,6 +10,12 @@ shared_preload_libraries = 'pg_stat_statements'
 pg_stat_statements.track = all
 ```
 
+Create the table for pg_stat_statements:
+
+```
+CREATE EXTENSION pg_stat_statements;
+```
+
 ## 1. Create the Necessary Setup
 
 First create a database called `slow_queries_exercise`:
