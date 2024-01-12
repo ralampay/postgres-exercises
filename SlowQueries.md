@@ -47,7 +47,7 @@ Insert some random data:
 
 ```
 -- Insert random data into Teachers table
-INSERT INTO teachers (teacher_name, id)
+INSERT INTO teachers (teacher_name, subject_id)
 SELECT
     'Teacher' || generate_series(1, 100),
     (random() * 10 + 1)::int
