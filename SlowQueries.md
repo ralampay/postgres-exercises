@@ -122,9 +122,9 @@ HAVING COUNT(DISTINCT teachers.subject_id) > 1;
 SELECT
     query,
     calls,
-    total_time,
+    total_exec_time,
     rows,
-    mean_time
+    mean_exec_time
 FROM
     pg_stat_statements
 ORDER BY
